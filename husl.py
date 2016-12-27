@@ -133,7 +133,7 @@ def rgb_prepare(triple):
         if ch < 0: ch = 0
         if ch > 1: ch = 1
 
-        ret.append(round(ch * 255, 0))
+        ret.append(int(round(ch * 255, 0)))
 
     return ret
 
